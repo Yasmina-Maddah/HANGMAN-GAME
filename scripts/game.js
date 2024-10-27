@@ -1,29 +1,12 @@
-var words = ["lebanon", "palestine", "beirut", "road", "building"];
+const answerSection = document.getElementById("answer-section");
+const alphabets = document.querySelector(".letters");
+const hangmanParts = ["head", "body", "right-hand", "left-hand", "right-leg", "left-leg"];
 
+var lettersButton = document.querySelector(".letters");
+lettersButton = addEventListener("click", displayLetters);
 
-function anyword(array){
-    return array[Math.floor(Math.random() * array.lrngth)]
-};
-
-var specificWord = anyword(words);
-var guessedLetters = [];
-var incorrectGuessesAlloved = 6;
-
-
-var answerSection = document.getElementbyID("answer-section");
-var hangElement = document.getElementById("hang");
-var letters = document.getElementById(.letter);
-
-//the word that is selected should appears as dashes
-
-function wordAppears(){
-    for (var letter of specificWord)
-        if(guessedLetters.includes(letter)){
-            wordAppears += letter
-        } else {
-            wordAppears += "_"
-        }
-  
+function displayLetters(){
+    console.log("Hello Taha");
 }
 
 
